@@ -816,7 +816,7 @@ params = CGI.parse(uri.query || "")
       @metadata.write(ruby_version_cache, full_ruby_version, false)
       @metadata.write(buildpack_version_cache, BUILDPACK_VERSION, false)
       @metadata.write(bundler_version_cache, BUNDLER_VERSION, false)
-      @metadata.write(rubygems_version_cache, rubygems_version, false)
+      @metadata.write(rubygems_version_cache, '1.5.3', false)
       @metadata.write(stack_cache, @stack, false)
       @metadata.save
     end
